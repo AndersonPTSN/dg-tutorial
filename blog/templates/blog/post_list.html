@@ -4,8 +4,7 @@
         <title>AND's blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet"> 
+        <link rel="stylesheet" href="{% static 'css/blog2.css' %}">
     </head>
     <body>
         <div>
@@ -16,10 +15,10 @@
                             {% for post in posts %}
                                 <div class="post">
                                     <div class="date">
-                                        <p>published: {{ post.published_date }}</p>
-                                    </div>
-                                    <h1><a href="">{{ post.title }}</a></h1>
-                                    <p>{{ post.text|linebreaksbr }}</p>
+                                    <h2><a href="">{{ post.title }}</a></h2>
+                                </div>    
+                                    <h3>{{ post.text|linebreaksbr }}</h3>
+                                    <p>published: {{ post.published_date }}</p>
                                 </div>
                             {% endfor %}
                         </div>
